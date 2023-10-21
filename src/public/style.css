@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(62, 62, 135);
+}
+
+h1{
+    width: 60%;
+    margin: 10px auto;
+    color: white;
+}
+
+.detalhe img{
+    height: 240px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 32px auto;
+    gap: 10px;
+}
+
+.formulario button{
+    border-radius: 4px;
+    border: 0;
+    width: 50%;
+    margin: 5px auto;
+    height: 30px;
+}
+
+.formulario button:hover{
+    background-color: rgb(160, 160, 240);
+    color: white;
+}
+
+span{
+    color: white;
+}

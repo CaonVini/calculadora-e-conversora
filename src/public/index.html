@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando em Janelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="detalhe">
+        <img src="./background.jpg" alt="background">
+    </div>
+    <div class="formulario">
+        <h1> Calculo do IMC </h1>
+        <span name="calculado"> </span>
+        <input type="number" name="altura" placeholder="cm">
+        <input type="number" name="peso" placeholder="kg">
+        <button onclick="Calcular()"> Calcular </button>
+    </div>
+
+    <script>
+        const entradaAltura = document.querySelector("[name=altura]");
+        const entradaPeso = document.querySelector("[name=peso]");
+        const saidaCalculo = document.querySelector("[name=calculado]");
+
+        function Calcular() {
+            const valorAltura = parseFloat(entradaAltura.value);
+            const valorPeso = parseFloat(entradaPeso.value);
+            const resultado = valorPeso / (valorAltura * valorAltura);
+
+            if (resultado) {
+                saidaCalculo.innerHTML = resultado;
+            }
+
+
+        }
+
+    </script>
+
+</body>
+</html>
