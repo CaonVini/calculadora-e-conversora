@@ -10,9 +10,10 @@ body {
 }
 
 h1{
-    width: 60%;
+    width: 100%;
     margin: 10px auto;
     color: white;
+    text-align: center;
 }
 
 .detalhe img{
@@ -38,7 +39,7 @@ h1{
 }
 
 .formulario button:hover{
-    background-color: rgb(160, 160, 240);
+    background-color: rgb(170, 170, 170);
     color: white;
 }
 
@@ -46,3 +47,8 @@ span{
     color: white;
     margin: 5px auto; 
 }
+
+.formulario input{
+    padding: 10px;
+}
+
